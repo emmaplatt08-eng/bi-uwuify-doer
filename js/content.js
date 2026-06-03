@@ -86,7 +86,7 @@ async function uwuifyText(node) {
 async function uwuify(str) {
     str = str.replace(/р|л|r|l/g, 'w')
         .replace(/Р|Л|R|L/g, 'W')
-        .replace(/Чр|чр|||Chr|chr/g, 'cw')
+        .replace(/Чр|чр|Chr|chr/g, 'cw')
         .replace(/Ove|ove/g, 'uv')
         .replace(/Ове|ове|Овэ|овэ/g, 'ув')
         .replace(/ss|SS/g, 'sh')
