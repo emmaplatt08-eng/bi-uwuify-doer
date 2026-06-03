@@ -84,11 +84,13 @@ async function uwuifyText(node) {
 }
 
 async function uwuify(str) {
-    str = str.replace(/r|l/g, 'w')
-        .replace(/R|L/g, 'W')
-        .replace(/Chr|chr/g, 'cw')
+    str = str.replace(/р|л|r|l/g, 'w')
+        .replace(/Р|Л|R|L/g, 'W')
+        .replace(/Чр|чр|||Chr|chr/g, 'cw')
         .replace(/Ove|ove/g, 'uv')
+        .replace(/Ове|ове|Овэ|овэ/g, 'ув')
         .replace(/ss|SS/g, 'sh')
+        .replace(/С|с/g, 'ш')
         .replace(/n([aeiou])/g, 'ny$1')
         .replace(/N([aeiou])/g, 'Ny$1')
         .replace(/N([AEIOU])/g, 'Ny$1');
